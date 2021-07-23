@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mascotas",
+  "info": {
+    "name": "mascota",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "meses": {
+      "type": "integer"
+    },
+    "raza": {
+      "type": "string"
+    },
+    "usuario_id": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}
